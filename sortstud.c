@@ -30,7 +30,7 @@ void stud_sort(void)
         return;
     }
 
-    /* Make a separate copy so the original linked list stays unchanged. */
+    
     for (temp = hptr; temp != NULL; temp = temp->link)
     {
         newnode = (ST *)malloc(sizeof(ST));
@@ -65,7 +65,7 @@ void stud_sort(void)
         }
     }
 
-    /* Sort only the copied list. */
+    
     for (temp = copy; temp != NULL; temp = temp->link)
     {
         for (ptr = temp->link; ptr != NULL; ptr = ptr->link)
