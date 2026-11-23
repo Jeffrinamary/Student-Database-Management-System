@@ -15,7 +15,7 @@ void stud_save(void)
 
     for (temp = hptr; temp != NULL; temp = temp->link)
     {
-        /* Pipe separates fields; student names may contain spaces. */
+        
         fprintf(fp, "%d|%s|%.2f\n",
                 temp->id, temp->student_name, temp->marks);
     }
@@ -40,7 +40,7 @@ void stud_load(void)
     fp = fopen("student.dat", "r");
 
     if (fp == NULL)
-        return; /* First run: no data file yet. */
+        return; 
 
     while (fgets(line, sizeof(line), fp) != NULL)
     {
