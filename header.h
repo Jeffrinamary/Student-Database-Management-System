@@ -1,6 +1,3 @@
-#ifndef HEADER_H
-#define HEADER_H
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -22,5 +19,3 @@ void stud_mod(void);
 void stud_save(void);
 void stud_load(void);
 void stud_sort(void);
-
-#endif
