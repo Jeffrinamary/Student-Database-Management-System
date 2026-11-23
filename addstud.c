@@ -27,7 +27,7 @@ void stud_add(void)
         return;
     }
 
-    /* Find the smallest available positive roll number. */
+    
     while (1)
     {
         found = 0;
